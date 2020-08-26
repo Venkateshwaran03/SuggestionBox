@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  
+  
+
+}
+
+body {
+  background-image:url(Dog1.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+
+.wrapper .title {
+  padding: 50px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+  color: #fff;
+}
+
+.wrapper .search_box {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  background: black;
+  padding: 10px;
+  transform: translate(-50%,-50%);
+  border-radius: 40px;
+  height: 40px;
+  
+}
+
+.wrapper .search_box input {
+  border: none;
+  border-radius: 50px;
+  width: 300px;
+  outline: none;
+  padding: 0px;
+  height: 40px;
+  background: none;
+  color: #fff;
+  line-height: 40px;
+  transition: 0.4s;
+  font-size: 16px;
+  float: left;
+  width: 0px;
+}
+.wrapper .search_box i{
+
+    color: #e84118;
+    float: right;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2f3640;
+}
+
+::placeholder {
+  color: #e5edfa;
+}
+
+
+
+.table_wrap {
+  width: 1000px;
+  margin: 50px auto 0;
+  
+}
+
+.table_wrap ul li .item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 15px 0;
+  height: 50px;
+}
+
+.table_wrap ul li .item .name,
+.table_wrap ul li .item .phone {
+  width: 20%;
+  padding: 0 15px;
+}
+
+.table_wrap ul li .item .status {
+  width: 15%;
+  padding: 0 15px;
+}
+
+.table_wrap ul li .item .issue {
+  width: 45%;
+  padding: 0 15px;
+}
+
+.table_wrap ul li .item .issue span,
+.table_wrap ul li .item .name span {
+  width: 90%;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table_header ul li .item {
+  border-bottom: 2px solid #eaeaea;
+  font-weight: 600;
+}
+
+.table_body {
+  height: 300px;
+  overflow: auto;
+}
+
+.table_body ul li .item {
+  border-bottom: 1px solid #efefef;
+}
+
+.table_body ul li .item .status span {
+  padding: 5px 20px;
+  border-radius: 25px;
+  max-width: 115px;
+  display: inline-block;
+}
+
+.table_body ul li .item .open {
+  background: #e5edfa;
+  color: #5a8ee4;
+}
+
+.table_body ul li .item .fixed {
+  background: #cff1f0;
+  color: #0dbeb6;
+}
+
+.table_body ul li .item .closed {
+  background: #fedfe5;
+  color: #ff89a0;
+}
+
+.table_body ul li .item .hold {
+  background: #fff0db;
+  color: #f59d39;
+}
+
+.table_body ul li .item .reopened {
+  background: #d6f2ff;
+  color: #29a5d8;
+}
+
+.table_body ul li .item .canceled {
+  background: #ffdbd6;
+  color: #e87060;
+}
+.wrapper .search_box:hover > input {
+     
+    width: 240px;
+    padding: 0px 6px;
+}
+.wrapper .search_box:hover > i{
+     background: white;
+}
